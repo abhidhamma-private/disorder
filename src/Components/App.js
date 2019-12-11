@@ -20,33 +20,17 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
-const Grid = styled.div`
-  margin: 0 auto;
-  max-width: 935px;
-  width: 100vw;
-  display: grid;
-  grid-template-rows: 1fr 1fr 14fr;
-  height: 100vh;
-`;
-
 export default () => {
   let {
     data: { isLoggedIn },
   } = useQuery(QUERY);
-  isLoggedIn = false;
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyles />
 
-      {isLoggedIn ? (
-        <Wrapper>
-          <Router isLoggedIn={isLoggedIn} />
-        </Wrapper>
-      ) : (
-        <Grid>
-          <Router isLoggedIn={isLoggedIn} />
-        </Grid>
-      )}
+      <Wrapper>
+        <Router isLoggedIn={isLoggedIn} />
+      </Wrapper>
 
       <ToastContainer position={toast.POSITION.BOTTOM_LEFT} />
     </ThemeProvider>

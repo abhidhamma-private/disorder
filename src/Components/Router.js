@@ -14,19 +14,52 @@ import Alarm from '../Routes/Alarm';
 import Board from '../Routes/Board';
 import Etc from '../Routes/Etc';
 import Me from '../Routes/Me';
+import styled from 'styled-components';
+
+const Grid = styled.div`
+  margin: 0 auto;
+  max-width: 935px;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 1fr 14fr;
+  height: 100vh;
+`;
 
 const LoggedInRoutes = () => (
   <>
-    <Menu />
     <Switch>
-      <Route path={'/'} exact={true} component={People} />
-      <Route path={'/people'} component={People} />
-      <Route path={'/diary'} component={Diary} />
-      <Route path={'/alarm'} component={Alarm} />
-      <Route path={'/board'} component={Board} />
-      <Route path={'/me'} component={Me} />
-      <Route path={'/etc'} component={Etc} />
-      <Redirect from={'*'} to={'/'} />
+      <Grid>
+        <Menu />
+        <Route path={'/'} exact={true} component={People} />
+      </Grid>
+      <Grid>
+        <Menu />
+        <Route path={'/people'} component={People} />
+      </Grid>
+      <Grid>
+        <Menu />
+        <Route path={'/diary'} component={Diary} />
+      </Grid>
+      <Grid>
+        <Menu />
+        <Route path={'/alarm'} component={Alarm} />
+      </Grid>
+      <Grid>
+        <Menu />
+        <Route path={'/board'} component={Board} />
+      </Grid>
+      <Grid>
+        <Menu />
+        <Route path={'/me'} component={Me} />
+      </Grid>
+      <Grid>
+        <Menu />
+        <Route path={'/etc'} component={Etc} />
+      </Grid>
+      <Grid>
+        <Menu />
+        <Redirect from={'*'} to={'/'} />
+      </Grid>
     </Switch>
   </>
 );
