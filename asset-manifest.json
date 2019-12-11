@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/disorder/static/js/main.2343587c.chunk.js",
+    "main.js.map": "/disorder/static/js/main.2343587c.chunk.js.map",
+    "runtime-main.js": "/disorder/static/js/runtime-main.eedf8446.js",
+    "runtime-main.js.map": "/disorder/static/js/runtime-main.eedf8446.js.map",
+    "static/css/2.5dbdccff.chunk.css": "/disorder/static/css/2.5dbdccff.chunk.css",
+    "static/js/2.7f29ff9e.chunk.js": "/disorder/static/js/2.7f29ff9e.chunk.js",
+    "static/js/2.7f29ff9e.chunk.js.map": "/disorder/static/js/2.7f29ff9e.chunk.js.map",
+    "index.html": "/disorder/index.html",
+    "precache-manifest.fdb5fcf297359a541bdf3d19bebfd331.js": "/disorder/precache-manifest.fdb5fcf297359a541bdf3d19bebfd331.js",
+    "service-worker.js": "/disorder/service-worker.js",
+    "static/css/2.5dbdccff.chunk.css.map": "/disorder/static/css/2.5dbdccff.chunk.css.map",
+    "static/js/2.7f29ff9e.chunk.js.LICENSE": "/disorder/static/js/2.7f29ff9e.chunk.js.LICENSE",
+    "static/media/Facebook.svg": "/disorder/static/media/Facebook.7751cd87.svg",
+    "static/media/MessengerRGB.svg": "/disorder/static/media/MessengerRGB.a918db78.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eedf8446.js",
+    "static/css/2.5dbdccff.chunk.css",
+    "static/js/2.7f29ff9e.chunk.js",
+    "static/js/main.2343587c.chunk.js"
+  ]
+}
