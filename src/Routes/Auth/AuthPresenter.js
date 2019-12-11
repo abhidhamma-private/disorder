@@ -66,17 +66,17 @@ export default ({
       )}
       {action === 'signUp' && (
         <form onSubmit={onSubmit}>
-          <Input placeholder={'First name'} {...firstName} />
-          <Input placeholder={'Last name'} {...lastName} />
-          <Input placeholder={'Email'} {...email} type="email" />
-          <Input placeholder={'userName'} {...userName} />
+          <Input placeholder={'성'} {...firstName} />
+          <Input placeholder={'이름'} {...lastName} />
+          <Input placeholder={'이메일'} {...email} type="email" />
+          <Input placeholder={'닉네임'} {...userName} />
           <Button text={'회원가입'} />
         </form>
       )}
       {action === 'confirm' && (
         <form onSubmit={onSubmit}>
-          <Input placeholder="Paste your secret" required {...secret} />
-          <Button text={'Confirm'} />
+          <Input placeholder="키를 입력해주세요" required {...secret} />
+          <Button text={'확인'} />
         </form>
       )}
     </Form>
