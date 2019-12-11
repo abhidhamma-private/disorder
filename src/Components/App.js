@@ -39,13 +39,13 @@ export default () => {
       <GlobalStyles />
 
       {isLoggedIn ? (
-        <Grid>
-          <Router isLoggedIn={isLoggedIn} />
-        </Grid>
-      ) : (
         <Wrapper>
           <Router isLoggedIn={isLoggedIn} />
         </Wrapper>
+      ) : (
+        <Grid>
+          <Router isLoggedIn={isLoggedIn} />
+        </Grid>
       )}
 
       <ToastContainer position={toast.POSITION.BOTTOM_LEFT} />
