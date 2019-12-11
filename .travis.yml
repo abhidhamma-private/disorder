@@ -10,6 +10,7 @@ install:
   - sudo apt-get install git
   - npm install
   - npm install -g yarn
+  - yarn add antd@4.0.0-alpha.0
 
 before_script:
   - git config --global user.name $USER_NAME
