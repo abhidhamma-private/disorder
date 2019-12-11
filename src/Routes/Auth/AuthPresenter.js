@@ -60,8 +60,8 @@ export default ({
     <Form>
       {action === 'logIn' && (
         <form onSubmit={onSubmit}>
-          <Input placeholder={'Email'} {...email} type="email" />
-          <Button text={'Log in'} />
+          <Input placeholder={'이메일'} {...email} type="email" />
+          <Button text={'로그인'} />
         </form>
       )}
       {action === 'signUp' && (
@@ -70,7 +70,7 @@ export default ({
           <Input placeholder={'Last name'} {...lastName} />
           <Input placeholder={'Email'} {...email} type="email" />
           <Input placeholder={'userName'} {...userName} />
-          <Button text={'Sign up'} />
+          <Button text={'회원가입'} />
         </form>
       )}
       {action === 'confirm' && (
@@ -85,13 +85,13 @@ export default ({
       <StateChanger>
         {action === 'logIn' ? (
           <>
-            Don't have an account?{' '}
-            <Link onClick={() => setAction('signUp')}>Sign up</Link>
+            아직 회원이 아니세요?{' '}
+            <Link onClick={() => setAction('signUp')}>회원가입</Link>
           </>
         ) : (
           <>
-            Have an account?{' '}
-            <Link onClick={() => setAction('logIn')}>Log in</Link>
+            계정이 있으세요??{' '}
+            <Link onClick={() => setAction('logIn')}>로그인</Link>
           </>
         )}
       </StateChanger>

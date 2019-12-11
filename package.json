@@ -1,6 +1,6 @@
 {
-  "name": "prismagram-frontend",
-  "homepage": "https://abhidhamma.github.io/prismagram-frontend/",
+  "name": "disorder",
+  "homepage": "https://abhidhamma.github.io/disorder/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
