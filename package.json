@@ -28,7 +28,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "gh-pages-clean",
-    "deploy": "gh-pages -d build   -r \"https://${GITHUB_TOKEN}@github.com/abhidhamma/prismagram-frontend\""
+    "deploy": "gh-pages -d build   -r \"https://${GITHUB_TOKEN}@github.com/abhidhamma/disorder\""
   },
   "eslintConfig": {
     "extends": "react-app"
