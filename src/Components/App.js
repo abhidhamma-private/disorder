@@ -33,9 +33,7 @@ export default () => {
   let {
     data: { isLoggedIn },
   } = useQuery(QUERY);
-  if (typeof isLoggedIn == 'undefined') {
-    isLoggedIn = false;
-  }
+  isLoggedIn = false;
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyles />
