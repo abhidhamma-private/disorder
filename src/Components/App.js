@@ -30,9 +30,12 @@ const Grid = styled.div`
 `;
 
 export default () => {
-  const {
+  let {
     data: { isLoggedIn },
   } = useQuery(QUERY);
+  if (typeof isLoggedIn == 'undefined') {
+    isLoggedIn = false;
+  }
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyles />
