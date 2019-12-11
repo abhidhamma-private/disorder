@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Auth from '../Routes/Auth';
 import Menu from '../Components/Menu';
 import People from '../Routes/People';
@@ -67,9 +67,9 @@ const LoggedOutRoutes = () => (
 
 const AppRouter = ({ isLoggedIn }) => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Switch>{isLoggedIn ? <LoggedInRoutes /> : <LoggedOutRoutes />}</Switch>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
