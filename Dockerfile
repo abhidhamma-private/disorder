@@ -1,10 +1,15 @@
-FROM nginx:1.14.2-alpine
+# base image
+FROM node:12.2.0-alpine
 
-VOLUME /var/www
+# set working directory
+WORKDIR /disorder
 
-COPY ./build /var/www/disorder.abhidhamma.com
-COPY ./nginx.conf /etc/nginx/conf.d/abhidhamma.disorder.com.conf
+# add `/app/node_modules/.bin` to $PATH
+ENV PATH /disorder/node_modules/.bin:$PATH
 
-EXPOSE 80
+# install and cache app dependencies
+COPY package.json /disorder/package.json
+RUN npm install
 
-CMD ["nginx", "-g", "daemon off;"]
+# start app
+CMD ["npm", "start"]
