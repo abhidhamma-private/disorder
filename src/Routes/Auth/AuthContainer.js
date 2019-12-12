@@ -45,7 +45,7 @@ export default () => {
             data: { requestSecret },
           } = await requestSecretMutation();
           if (!requestSecret) {
-            toast.error('아직 계정이 없어요, 하나만들어야합니다.');
+            toast.error('아직 계정이 없습니다., 하나만들어야해요.');
             setTimeout(() => setAction('signUp'), 3000);
           } else {
             toast.success('이메일에 전송된 키를 확인하세요');
