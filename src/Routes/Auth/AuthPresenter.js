@@ -90,7 +90,7 @@ export default ({
           </>
         ) : (
           <>
-            계정이 있으세요??{' '}
+            계정이 있으세요?{' '}
             <Link onClick={() => setAction('logIn')}>로그인</Link>
           </>
         )}
