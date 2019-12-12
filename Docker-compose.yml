@@ -1,0 +1,16 @@
+version:'3.7'
+
+services:
+  movie_app:
+    container_name:movie_app
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/nodemodules'
+    ports:
+      - '3000:3000'
+    environment: 
+      - NODEENV=development
+      - CHOKIDAR_USEPOLLING=true
