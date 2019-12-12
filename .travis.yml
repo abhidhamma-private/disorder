@@ -13,9 +13,3 @@ after_success:
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
   - docker build -t abhidhamma91/disorder .
   - docker push abhidhamma91/disorder
-
-deploy:
-  provider: script
-  script: bash /start.sh
-  on:
-    branch: master
