@@ -1,8 +1,8 @@
 version:'3.7'
 
 services:
-  movie_app:
-    container_name:movie_app
+  disorder:
+    container_name:disorder
     build: 
       context: .
       dockerfile: Dockerfile
