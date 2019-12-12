@@ -3,7 +3,6 @@ node_js:
   - 'node'
 services:
   - docker
-
 install:
   - npm install
 
@@ -12,5 +11,5 @@ script:
 
 after_success:
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-  - docker build -t abhidhamma/disorder .
-  - docker push abhidhamma/disorder
+  - docker build -t abhidhamma91/disorder .
+  - docker push abhidhamma91/disorder
