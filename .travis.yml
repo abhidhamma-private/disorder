@@ -13,8 +13,6 @@ after_success:
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
   - docker build -t abhidhamma91/disorder .
   - docker push abhidhamma91/disorder
-  - docker pull abhidhamma91/disorder
-  - docker run -p 3000:3000 --name disorder abhidhamma91/disorder:latest
 
 deploy:
   provider: script
