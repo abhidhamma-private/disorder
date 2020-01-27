@@ -38,7 +38,10 @@ self.addEventListener('push', event => {
 });
 
 self.addEventListener('notificationclick', event => {
-  var data = event.notification.data;
+  console.log('event : ', event);
+  console.log('notification : ', event.notification);
+  var questionUrl = event.notification.data;
+  console.log(questionUrl);
   const url = data.url || 'https://abhidhamma.github.io/disorder';
   event.notification.close();
   event.waitUntil(clients.openWindow(url));
