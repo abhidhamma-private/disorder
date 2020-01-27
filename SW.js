@@ -30,7 +30,7 @@ self.addEventListener('push', event => {
   const options = {
     body: payload.body,
     icon: './favicon.ico',
-    url: payload.url,
+    data: payload.url,
     badge: './push-badge.png',
     tag: 'DISORDER',
   };
