@@ -30,15 +30,18 @@ self.addEventListener('push', event => {
   const options = {
     body: payload.body,
     icon: './favicon.ico',
-    // questionid: payload.questionid,
-    // badge: './push-badge.png',
-    // tag: 'DISORDER',
+    url: payload.url,
+    badge: './push-badge.png',
+    tag: 'DISORDER',
   };
   event.waitUntil(self.registration.showNotification(title, options));
 });
 
 self.addEventListener('notificationclick', event => {
-  var data = event.notification.data;
+  console.log('event : ', event);
+  console.log('notification : ', event.notification);
+  var questionUrl = event.notification.data;
+  console.log(questionUrl);
   const url = data.url || 'https://abhidhamma.github.io/disorder';
   event.notification.close();
   event.waitUntil(clients.openWindow(url));
