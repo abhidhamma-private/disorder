@@ -42,7 +42,7 @@ self.addEventListener('notificationclick', event => {
   console.log('notification : ', event.notification);
   var questionUrl = event.notification.data;
   console.log(questionUrl);
-  const url = data.url || 'https://abhidhamma.github.io/disorder';
+  const url = questionUrl || 'https://abhidhamma.github.io/disorder';
   event.notification.close();
   event.waitUntil(clients.openWindow(url));
 });
