@@ -30,9 +30,9 @@ self.addEventListener('push', event => {
   const options = {
     body: payload.body,
     icon: './favicon.ico',
-    // questionid: payload.questionid,
-    // badge: './push-badge.png',
-    // tag: 'DISORDER',
+    url: payload.url,
+    badge: './push-badge.png',
+    tag: 'DISORDER',
   };
   event.waitUntil(self.registration.showNotification(title, options));
 });
