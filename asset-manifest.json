@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/disorder/static/css/main.40c82021.chunk.css",
-    "main.js": "/disorder/static/js/main.3d8d8a70.chunk.js",
-    "main.js.map": "/disorder/static/js/main.3d8d8a70.chunk.js.map",
+    "main.css": "/disorder/static/css/main.72e68b19.chunk.css",
+    "main.js": "/disorder/static/js/main.6a1bf435.chunk.js",
+    "main.js.map": "/disorder/static/js/main.6a1bf435.chunk.js.map",
     "runtime-main.js": "/disorder/static/js/runtime-main.eedf8446.js",
     "runtime-main.js.map": "/disorder/static/js/runtime-main.eedf8446.js.map",
-    "static/css/2.04ca8c87.chunk.css": "/disorder/static/css/2.04ca8c87.chunk.css",
-    "static/js/2.3ebeadfc.chunk.js": "/disorder/static/js/2.3ebeadfc.chunk.js",
-    "static/js/2.3ebeadfc.chunk.js.map": "/disorder/static/js/2.3ebeadfc.chunk.js.map",
+    "static/css/2.5dbdccff.chunk.css": "/disorder/static/css/2.5dbdccff.chunk.css",
+    "static/js/2.3429e783.chunk.js": "/disorder/static/js/2.3429e783.chunk.js",
+    "static/js/2.3429e783.chunk.js.map": "/disorder/static/js/2.3429e783.chunk.js.map",
     "index.html": "/disorder/index.html",
-    "precache-manifest.0f96de6d68b88759467df4ecbed3abef.js": "/disorder/precache-manifest.0f96de6d68b88759467df4ecbed3abef.js",
+    "precache-manifest.96f7af78590319d78ce0801df85eb6b3.js": "/disorder/precache-manifest.96f7af78590319d78ce0801df85eb6b3.js",
     "service-worker.js": "/disorder/service-worker.js",
-    "static/css/2.04ca8c87.chunk.css.map": "/disorder/static/css/2.04ca8c87.chunk.css.map",
-    "static/css/main.40c82021.chunk.css.map": "/disorder/static/css/main.40c82021.chunk.css.map",
-    "static/js/2.3ebeadfc.chunk.js.LICENSE": "/disorder/static/js/2.3ebeadfc.chunk.js.LICENSE",
+    "static/css/2.5dbdccff.chunk.css.map": "/disorder/static/css/2.5dbdccff.chunk.css.map",
+    "static/css/main.72e68b19.chunk.css.map": "/disorder/static/css/main.72e68b19.chunk.css.map",
+    "static/js/2.3429e783.chunk.js.LICENSE": "/disorder/static/js/2.3429e783.chunk.js.LICENSE",
     "static/media/1.jpg": "/disorder/static/media/1.4c593b61.jpg",
     "static/media/12.jpg": "/disorder/static/media/12.967df838.jpg",
     "static/media/19.jpg": "/disorder/static/media/19.281b126a.jpg",
@@ -28,9 +28,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.eedf8446.js",
-    "static/css/2.04ca8c87.chunk.css",
-    "static/js/2.3ebeadfc.chunk.js",
-    "static/css/main.40c82021.chunk.css",
-    "static/js/main.3d8d8a70.chunk.js"
+    "static/css/2.5dbdccff.chunk.css",
+    "static/js/2.3429e783.chunk.js",
+    "static/css/main.72e68b19.chunk.css",
+    "static/js/main.6a1bf435.chunk.js"
   ]
 }
