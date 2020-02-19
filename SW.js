@@ -32,7 +32,7 @@ self.addEventListener('push', event => {
     icon: './favicon.ico',
     data: payload.url,
     badge: './push-badge.png',
-    tag: 'DISORDER',
+    tag: 'SELFHELP',
   };
   event.waitUntil(self.registration.showNotification(title, options));
 });
